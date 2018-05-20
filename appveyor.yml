@@ -1,6 +1,9 @@
 environment:
-  TWINE_USERNAME: joerick
-  # Note: TWINE_PASSWORD is set in Appveyor settings
+
+  matrix:
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python27-x64"
+  
 
 build_script:
   - pip install cibuildwheel
