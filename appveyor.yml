@@ -3,7 +3,7 @@ environment:
   # Note: TWINE_PASSWORD is set in Appveyor settings
 
 build_script:
-  - pip install cibuildwheel==0.2.0
+  - pip install cibuildwheel
   - cibuildwheel --output-dir wheelhouse
 artifacts:
   - path: "wheelhouse\\*.whl"
